@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let operator = prompt('Enter operator to perform calculation (either +,-,*,/,%)');
+        let first_number = parseFloat(prompt("Enter a number: "));
+        let second_number = parseFloat(prompt("Enter another number: "));
+        let output;
+
+        if (operator == '+'){
+            output = first_number + second_number;
+        }else if (operator == '-'){
+            output = first_number - second_number;
+        }else if (operator == '*'){
+            output = first_number * second_number;
+        }else if (operator == '/'){
+            output = first_number / second_number;
+        }else{
+            output = first_number % second_number;
+        }
+        
+        alert('Result is ' + output);
+
+    </script>
+</body>
+</html>
